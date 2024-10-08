@@ -1,0 +1,127 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+vadder
+Z0 !s110 1728394707
+!i10b 1
+!s100 ]IzfES0L5>gPK@TRFRl982
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ioz:dOafTNo^lccS^l6CJU1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/kurin/Documents/Programming/Modelsim/ALU
+Z4 w1728393762
+Z5 8C:/Users/kurin/Documents/Programming/Modelsim/ALU/Arithmetic Logic Unit.v
+Z6 FC:/Users/kurin/Documents/Programming/Modelsim/ALU/Arithmetic Logic Unit.v
+!i122 4
+L0 1 20
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1728394707.000000
+!s107 C:/Users/kurin/Documents/Programming/Modelsim/ALU/Arithmetic Logic Unit.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kurin/Documents/Programming/Modelsim/ALU/Arithmetic Logic Unit.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vmultiplier
+R0
+!i10b 1
+!s100 X7P^7`R=SfZ7RR=[[<^>:2
+R1
+I<icMF;m9CaVNPl2I^Regc3
+R2
+R3
+R4
+R5
+R6
+!i122 4
+L0 50 23
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 C:/Users/kurin/Documents/Programming/Modelsim/ALU/Arithmetic Logic Unit.v|
+R9
+!i113 1
+R10
+R11
+vmux4to1
+R0
+!i10b 1
+!s100 >FXX<E_IL>WIDogz?Dg?23
+R1
+I_^DURmCZZD>o1YzcI;QB93
+R2
+R3
+R4
+R5
+R6
+!i122 4
+L0 75 10
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+R11
+vsubtractor
+R0
+!i10b 1
+!s100 2>U>^;bbfK;eejbCP3AKD3
+R1
+I^S23^Y0OA6nf0hSoG3=]h3
+R2
+R3
+R4
+R5
+R6
+!i122 4
+L0 23 25
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+R11
+vTwo_bit_ALU
+R0
+!i10b 1
+!s100 ?Wml=_K0_habLAH;jBXEC3
+R1
+IZb85fH2;_LD5Sk<2:?a;<1
+R2
+R3
+R4
+R5
+R6
+!i122 4
+L0 87 17
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+R11
+n@two_bit_@a@l@u

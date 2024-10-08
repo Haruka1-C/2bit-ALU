@@ -1,0 +1,67 @@
+module adder(a, b, c, d, cout, a1, a0);
+	input	a, b, c, d;
+	output	cout, a1, a0;
+	wire	cout_w1, cout_w2, cout_w3,
+		a1_w1, a1_w2;
+
+	and	AA1(cout_w1, b, c, d);
+	and	AA2(cout_w2, a, b, c);
+	and	AA3(cout_w3, a, c);
+	or	AO1(carry, cout_w1, cout_w2, cout_w3);
+
+	and	AA4(a1_w1, b, d);
+	xor	AXO1(a1_w2, a, c);
+	xor	AXO2(a1, a1_w1, a1_w2);
+
+	xor	AXO3(a0, b, d);
+endmodule
+
+
+module subtractor(a, b, c, d, borrow, s1, s0);
+	input 	a, b, c, d;
+	output	borrow, s1, s0;
+	wire	sna, snb, snc,
+		borrow_w1, borrow_w2, borrow_w3,
+		s1_w1, s1_w2;
+
+	not 	SN1(sna, a);
+	not	SN2(snb, b);
+	not	SN3(snd, d);
+
+	and	SA1(borrow_w1, sna, snb, d);
+	and	SA2(borrow_w2, snb, c, d);
+	and	SA3(borrow_w3, sna, c);
+	or	SO1(borrow, borrow_w1, borrow_w2, borrow_w3);
+	
+	or	SO2(s1_w1, b, snd);
+	xor	SXO1(s1_w2, a, c);
+	xnor	SXNO1(s1, s1_w1, s1_w2);
+
+	xor	SXO2(s0, b, d);
+endmodule
+
+
+module multiplier(a, b, c, d, m3, m2, m1, m0);
+	input 	a, b, c, d;
+	output	m3, m2, m1, m0; 
+	wire	mac, mad, mbc, mbd, mnbd;
+
+	and	MA1(mac, a, c);
+	and	MA2(mad, a, d);
+	and	MA3(mbc, b, c);
+	and	MA4(mbd, b, d);
+
+	and	MA5(m3, mac, mbd);
+
+	not	MN1(mnbd, mbd);
+	and	MA6(m2, mnbd, mac);
+
+	xor	MXO1(m1, mad, mbc);
+
+	assign	m0 = mbd;
+endmodule
+
+	
+	
+
+	
