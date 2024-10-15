@@ -6,9 +6,9 @@ module adder(a, b, c, d, cout, a1, a0);
 
 	//cout
 	and	AA1(cout_w1, b, c, d); //AA1 => Adder AND 1
-	and	AA2(cout_w2, a, b, c);
+	and	AA2(cout_w2, a, b, d);
 	and	AA3(cout_w3, a, c);
-	or	AO1(carry, cout_w1, cout_w2, cout_w3);
+	or	AO1(cout, cout_w1, cout_w2, cout_w3);
 
 	//a1
 	and	AA4(a1_w1, b, d);
